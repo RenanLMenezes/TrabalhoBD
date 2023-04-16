@@ -1,0 +1,72 @@
+@baseURL = http://localhost:3000
+
+GET {{baseURL}}/veiculos
+Content-Type: application/json
+
+###
+POST {{baseURL}}/veiculos
+Content-Type: application/json
+
+{
+    "placa": "ABC7779",
+    "nome": "Opala SS",
+    "descricao": "Carro lindo",
+    "fabricacao": "1967-01-01"
+}
+
+###
+PUT {{baseURL}}/veiculos
+Content-Type: application/json
+
+{
+    "codigo": 2,
+    "placa": "ABC1539",
+    "nome": "AUDI A54 PRATA",
+    "descricao": "s156ad",
+    "fabricacao": "01/04/2019"
+}
+
+###
+DELETE  {{baseURL}}/veiculos
+Content-Type: application/json
+
+{
+    "placa": "ABC7779"
+}
+
+###
+GET {{baseURL}}/clientes
+Content-Type: application/json
+
+###
+POST {{baseURL}}/clientes
+Content-Type: application/json
+
+{
+    "cpf": "999.888.777-50",
+    "nome": "Jão da Silva",
+    "codigoVeiculo": 2,
+    "locacao": "12/01/2023",
+    "devolucao": "12/10/2023"
+}
+
+###
+PUT {{baseURL}}/clientes
+Content-Type: application/json
+
+{
+    "cpf": "999.888.777-50",
+    "nome": "Jão da Silva Leme",
+    "codigoVeiculo": 2,
+    "locacao": "12/01/2023",
+    "devolucao": "12/10/2023"
+    
+}
+
+###
+DELETE  {{baseURL}}/clientes
+Content-Type: application/json
+
+{
+    "cpf": "999.888.777-50"
+}
