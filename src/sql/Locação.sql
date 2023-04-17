@@ -242,7 +242,7 @@ BEGIN
    RETURN
 END
 
-IF @CODIGOVEICULO IS NOT NULL AND @LOCACAO IS NULL AND @DEVOLUCAO IS NULL
+IF @CODIGOVEICULO IS NOT NULL AND (@LOCACAO IS NULL OR @DEVOLUCAO IS NULL)
 BEGIN
 	RAISERROR('Se o cliente for vinculado a um carro a data de locação e data de devolução são obrigatória!',15,1)
 	RETURN
@@ -295,7 +295,7 @@ BEGIN
    RETURN
 END
 
-IF @CODIGOVEICULO IS NOT NULL AND @LOCACAO IS NULL AND @DEVOLUCAO IS NULL
+IF @CODIGOVEICULO IS NOT NULL AND (@LOCACAO IS NULL OR @DEVOLUCAO IS NULL)
 BEGIN
 	RAISERROR('Se o cliente for vinculado a um carro a data de locação e data de devolução são obrigatória!',15,1)
 	RETURN

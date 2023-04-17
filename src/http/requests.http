@@ -21,7 +21,7 @@ Content-Type: application/json
 {
     "codigo": 2,
     "placa": "ABC1539",
-    "nome": "AUDI A54 PRATA",
+    "nome": "AUDI A4 PRATA",
     "descricao": "s156ad",
     "fabricacao": "01/04/2019"
 }
